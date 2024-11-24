@@ -1,7 +1,5 @@
-import userRouter from '../router/user.js'
-
-const controller = (app) => {
-  app.use('/user', userRouter)
+const getUser = (req, res) => {
+  res.send('user');
 }
 
-export default controller
+export {getUser}

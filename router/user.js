@@ -1,9 +1,7 @@
 import express from 'express';
 const router = express.Router();
+import {getUser} from '../controller/index'
 
-router.get('/', async (req, res) => {
-  res.send('user');
-})
-
+router.get('/search', getUser)
 
 export default router
